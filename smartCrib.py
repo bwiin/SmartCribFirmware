@@ -56,7 +56,7 @@ def main():
 	myMQTTClient = None
 	myMQTTClient = AWSIoTMQTTClient("smartcrib")
 	myMQTTClient.configureEndpoint("aho7m8kcsddgh.iot.us-east-1.amazonaws.com", 8883)
-	myMQTTClient.configureCredentials("/home/pi/Downloads/rootCA.pem","/home/pi/Downloads/0f8c0159f5-private.pem.key","/home/pi/Downloads/0f8c0159f5-certificate.pem.crt")
+	myMQTTClient.configureCredentials("/home/pi/Downloads/rootCA.pem","/home/pi/Downloads/private.pem.key","/home/pi/Downloads/certificate.pem.crt")
 
 #myMQTTClient.configureOfflinePublishQueueing(-1)
 #myMQTTClient.configureDrainingFrequency(2)
